@@ -18,7 +18,7 @@ A lot of developers identify JIRA issue when they're creating their feature/hotf
    * Run the script: *./script.sh path/to/your/repositories/folder*
    * **Note:** If you don't set the path to your repositories' folder, it will use your current directory "."
 
-# Test
+# References Used
 
 * https://coderwall.com/p/jp7d5q/create-a-global-git-commit-hook
 * https://medium.com/better-programming/how-to-automatically-add-the-ticket-number-in-git-commit-message-bda5426ded05
