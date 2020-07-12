@@ -1,3 +1,7 @@
+# git-commit-hook
+
+A lot of developers identify JIRA issue when they're creating their feature/hotfix branches, however identification on commit messages are also very important. Therefore, after investigating a bit how I could grab JIRA issue number from branch's name and add it into commit's message, in an automated way, I decided to create this small repository in order to help people that also struggle on this.
+
 # How to setup
 
 1. Globally
