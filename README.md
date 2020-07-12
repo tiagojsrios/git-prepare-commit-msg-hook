@@ -16,7 +16,20 @@ A lot of developers identify JIRA issue when they're creating their feature/hotf
 
 2. To make this also working for cloned repositories, you can run a script created by me.
    * Run the script: *./script.sh path/to/your/repositories/folder*
-   * **Note:** If you don't set the path to your repositories' folder, it will use your current directory "."
+
+# Branch naming convention that I use
+
+This is important to refer, as it might have impact on the regular expressions written on *prepare-commit-msg* file. When I'm creating a branch, I use the following convention: *branch-type/jira-issue_branch-name*, so I use _ (underscore) to separate *jira issue id* from *branch name*.
+
+Examples:
+* feature/ABC-1234_This-is-a-test
+* hotfix/ABC-1234_This-is-a-test
+
+# Notes
+
+* If you don't set the path to your repositories' folder, it will use your current directory "."
+* If you type jira issue id by yourself, don't worry because it won't be repeated on the commit message.
+* Feel free to give suggestions by doing pull requests. This is enough for myself, but I believe that it can be improved!
 
 # References Used
 
