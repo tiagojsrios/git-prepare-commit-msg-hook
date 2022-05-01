@@ -17,6 +17,8 @@ A lot of developers identify JIRA issue when they're creating their feature/hotf
 2. To make this also working for cloned repositories, you can run a script created by me.
    * Run the script: *./script.sh path/to/your/repositories/folder*
 
+*Important to refer that, by default, this will only applied to branches that starts either with feature/ or hotfix/. If you want to change this behavior, you can change the BRANCH_TYPES variable in the prepare-commit-msg file*.
+
 # Branch naming convention that I use
 
 This is important to refer, as it might have impact on the regular expressions written on *prepare-commit-msg* file. When I'm creating a branch, I use the following convention: *branch-type/jira-issue_branch-name*, so I use _ (underscore) to separate *jira issue id* from *branch name*.
