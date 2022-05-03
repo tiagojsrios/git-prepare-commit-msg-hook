@@ -1,8 +1,8 @@
 #!/bin/bash
 FILE=$1
 MESSAGE=$(cat $FILE)
-BRANCH_TYPES="feature/|hotfix/"
-TICKET=$(git rev-parse --abbrev-ref HEAD | grep -Eo "^(${BRANCH_TYPES})?(\w+[-_])?[0-9]+" | grep -Eo '(\w+[-])?[0-9]+' | tr "[:lower:]" "[:upper:]")
+BRANCH_TYPES="feature|hotfix"
+TICKET=$(git rev-parse --abbrev-ref HEAD | grep -Eo "^(${BRANCH_TYPES})?/(\w+[-_])?[0-9]+" | grep -Eo '(\w+[-])?[0-9]+' | tr "[:lower:]" "[:upper:]")
 
 if [[ $TICKET == "[]" || "$MESSAGE" == "$TICKET"* ]];then
   exit 0;
